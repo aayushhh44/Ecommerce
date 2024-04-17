@@ -17,11 +17,11 @@ const Navbar = () => {
   return (
     <div>
       <nav className='text-gray-700 font-openSans flex justify-end space-x-12 mt-3 mr-8'>
-        <Link className='hover:text-gray-900' to='/home'>Home</Link>
-        <Link className='hover:text-gray-900' to='/categories'>Categories</Link>
-        {!showModal && <Link onClick={toogle} className='hover:text-gray-900 font-bold' to='/cart'>Cart ({cartItems.length})</Link>}
-        <Link className='hover:text-gray-900' to='/new-arrivals'>New Arrivals</Link>
-        <Link className='hover:text-gray-900' to='/Blog'>Blog</Link>
+        <Link className='hover:text-gray-400 text-white' to='/home'>Home</Link>
+        <Link className='hover:text-gray-400 text-white' to='/categories'>Categories</Link>
+        {!showModal && <Link onClick={toogle} className='hover:text-gray-400 text-white font-bold' to='/cart'>Cart ({cartItems.length})</Link>}
+        <Link className='hover:text-gray-400 text-white' to='/new-arrivals'>New Arrivals</Link>
+        <Link className='hover:text-gray-400 text-white' to='/blogs'>Blog</Link>
       </nav>
     </div>
   )

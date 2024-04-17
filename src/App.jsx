@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Cart from './pages/Cart'
 import ProductCategory from './pages/ProductsCategory'
 import Counter from './pages/counter'
+import Blogs from './pages/Blogs'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
    <Route path='/cart' element={<Cart/>}/>
    <Route path='/categories' element={<ProductCategory />} />
    <Route path='/counter' element={<Counter />}/>
+   <Route path='/blogs' element={<Blogs />}/>
       </Routes>
     </div>
   )

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link, useNavigate } from "react-router-dom";
 
 const CategoryList = () => {
   const [categories, setCategories] = useState([]);
@@ -34,11 +35,13 @@ const CategoryList = () => {
     getPrductCategory(dom);
   };
 
+
   
 
   return (
     <>
     <div className="flex justify-between mt-16">
+      <Link className="text-black absolute top-2 underline left-6" to='/'>Back</Link>
     <div className="flex flex-col w-10 flex-wrap justify-center gap-4">
       {categories.map((category, index) => (
         <button
